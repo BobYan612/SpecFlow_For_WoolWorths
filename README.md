@@ -1,6 +1,6 @@
-# BDD Test for Woolworths
+## BDD Test for Woolworths
 
-** The Project is one example to use (Specflow + Playwright) to create a BDD test framework **
+**The Project is one example to use (Specflow + Playwright) to create a BDD test framework**
 
 **Dependency**  
 SpecFlow  
@@ -28,7 +28,7 @@ The project has implememnted and verified 5 test scenarios beased on the Trolley
  - Scenario2: _Choose a product from speical & offers to trolley parameters._
  - Scenario3: _Choose a product from low price to trolley_
  - Scenario4: _Update the quantity in trolley_
- - Scenario5: _Remove one item in the trolley_
+ - Scenario5: _Remove one item in the trolley_  
 
 > [!TIP]  
 > Any suggestions or questions please contact biao.yan612@gmail.com
