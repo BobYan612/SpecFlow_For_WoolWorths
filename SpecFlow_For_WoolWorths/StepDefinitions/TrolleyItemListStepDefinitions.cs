@@ -1,5 +1,5 @@
 /********************************************************************************
-# This is a practical project from Biao Yan (Bob Yan), and it's free to be 
+# This is a practice project from Biao Yan (Bob Yan), and it's free to be 
 # downloaded for study and test project.
 *********************************************************************************/
 
