@@ -1,4 +1,4 @@
-#BDD Test for Woolworths
+##BDD Test for Woolworths
 The Project is one example to use (Specflow + Playwright) to create a BDD test framework
 
 **Dependency**
@@ -15,7 +15,7 @@ Microsoft.Extensions.Configuration
 There are the below considerations during implementation:
  - Decouple the location definition from code to one configuration file ([elementlocations.json](SpecFlow_For_WoolWorths/elementlocations.json))
  - Specify the test options in one configuration file ([usersettings.json](SpecFlow_For_WoolWorths/usersettings.json)) which may easly change the browser type and credential parameters.
- - Implement one singleton class(UserConfiguration.cs) to read the user configuration file
+ - Implement one singleton class([UserConfiguration](SpecFlow_For_WoolWorths/Support/UserConfiguration.cs)) to read the user configuration file
  - Design homepage as one factory pattern which may create other page objects, so that the outside invokers may easily obtain the other page object.
  - Use ILogger to control the output of the test log
 
