@@ -1,7 +1,9 @@
-##BDD Test for Woolworths
+**BDD Test for Woolworths**
+
 The Project is one example to use (Specflow + Playwright) to create a BDD test framework
 
 **Dependency**
+
 SpecFlow
 SpecFlow.Plus.LivingDocPlugin
 SpecFlow.NUnit
@@ -12,6 +14,7 @@ Microsoft.Extensions.Configuration
 
 
 **Features**
+
 There are the below considerations during implementation:
  - Decouple the location definition from code to one configuration file ([elementlocations.json](SpecFlow_For_WoolWorths/elementlocations.json))
  - Specify the test options in one configuration file ([usersettings.json](SpecFlow_For_WoolWorths/usersettings.json)) which may easly change the browser type and credential parameters.
@@ -20,6 +23,7 @@ There are the below considerations during implementation:
  - Use ILogger to control the output of the test log
 
 **Test**
+
 The project has implememnted and verified 5 test scenarios beased on the Trolley feature (see trolley.feature in Features folder)
  - Scenario1: Choose a product from browse to trolley
  - Scenario2: Choose a product from speical & offers to trolley parameters.
