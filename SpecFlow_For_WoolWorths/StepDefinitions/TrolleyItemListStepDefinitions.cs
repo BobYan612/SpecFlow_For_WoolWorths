@@ -92,6 +92,10 @@ namespace SpecFlow_For_WoolWorths.StepDefinitions
             {
                 await trolleyPage.ReduceCountForChosenItem(productName);
             }
+            else if(buttonType == "remove")
+            {
+                await trolleyPage.RemoveChosenItem(productName);
+            }
             else
             {
                 throw new NotImplementedException($"The {buttonType} has not been implemented!");

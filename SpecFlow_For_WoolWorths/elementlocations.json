@@ -20,7 +20,7 @@
     "trolleypage.product_plus_count_button": "//cdx-svg-icon[@name='plus']/..",
     "trolleypage.product_minus_count_button": "//cdx-svg-icon[@name='minus']/..",
     "trolleypage.product_add_confirm_button_text": "Add",
-    "trolleypage.product_remove_button": "//button[text()='remove']",
+    "trolleypage.product_remove_button": "Remove",
     "trolleypage.product_clear_button_text": "Clear trolley",
     "trolleypage.product_clear_confirm_button_text": "Yes, clear trolley",
     "trolleypage.product_name_location": "//a[@routerlink='/shop/productdetails']/h2",
