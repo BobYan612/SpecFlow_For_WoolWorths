@@ -23,7 +23,7 @@ namespace PlaywrightTest.pages
         /// <summary>
         /// The method is used to initialize the variables of element location from user configuration file
         /// </summary>
-        protected override void initLocationDefinition()
+        protected override void InitLocationDefinition()
         {
             cdxCardTag = userSettings.GetAppParameter("browse.product_section");
             addTrolleyButton = userSettings.GetAppParameter("browse.product_add_trolley_button_text");
@@ -74,7 +74,7 @@ namespace PlaywrightTest.pages
         /// <returns></returns>
         public async Task SelectCategory(string productPath)
         {
-           await clickMenuItem(productPath);
+           await ClickMenuItem(productPath);
         }
 
     }

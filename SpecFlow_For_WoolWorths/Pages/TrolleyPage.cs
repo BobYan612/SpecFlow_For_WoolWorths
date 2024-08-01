@@ -42,7 +42,7 @@ namespace PlaywrightTest.pages
         /// <summary>
         /// The method is used to read the definition from user configuration file.
         /// </summary>
-        protected override void initLocationDefinition()
+        protected override void InitLocationDefinition()
         {
             trolleyProductSectionTag = userSettings.GetAppParameter("trolleypage.product_section");
             trolleyProductPlusButton = userSettings.GetAppParameter("trolleypage.product_plus_count_button");
@@ -145,7 +145,7 @@ namespace PlaywrightTest.pages
             {
                 ILocator labelLocator = await LocateElementFromParent(item, trolleyProductNameLoc);
                 string itemName = await GetTextFromElement(labelLocator);
-                ILocator priceLocator = await getEachPriceLocator(item);
+                ILocator priceLocator = await GetEachPriceLocator(item);
                 string itemEachPrice = await GetTextFromElement(priceLocator);
                 ILocator quantityLocator = await LocateElementFromParent(item, trolleyProductQuantityInput);
                 string itemQantity = await quantityLocator.InputValueAsync();
@@ -251,7 +251,7 @@ namespace PlaywrightTest.pages
         /// </summary>
         /// <param name="parentLocator">The product root ILocator</param>
         /// <returns>The subtotal price Ilocator of one product item</returns>
-        public async Task<ILocator> getEachPriceLocator(ILocator parentLocator)
+        public async Task<ILocator> GetEachPriceLocator(ILocator parentLocator)
         {
             ILocator priceLocator = parentLocator.Locator(trolleyProductSingleUnitPriceLoc)
                 .Or(parentLocator.Locator(trolleyProductPriceLoc)).Nth(0);

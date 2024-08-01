@@ -33,7 +33,7 @@ namespace SpecFlow_For_WoolWorths.Pages
         /// <summary>
         /// The method is used to initialized the variables of element location
         /// </summary>
-        protected override void initLocationDefinition()
+        protected override void InitLocationDefinition()
         {
             homepageURL = userSettings.GetAppParameter("homepage.url");
             homepageLogoClassname = userSettings.GetAppParameter("homepage.main_logo_location_classname");
@@ -77,7 +77,7 @@ namespace SpecFlow_For_WoolWorths.Pages
             if (!isLoggined)
             {
                 logger.LogInformation("Login in system");
-                await clickMenuItem(homepageLoginMenuPath);
+                await ClickMenuItem(homepageLoginMenuPath);
                 var loginPage = new Login(_page);
                 await loginPage.LoginIn();
 
@@ -141,7 +141,7 @@ namespace SpecFlow_For_WoolWorths.Pages
         /// <returns>Special Page</returns>
         public async Task<SpecialPricePage> GotoSpecialPage()
         {
-            await clickMenuItem(homepageSpecialPriceMenuButton);
+            await ClickMenuItem(homepageSpecialPriceMenuButton);
             return new SpecialPricePage(_page);
         }
 
@@ -151,7 +151,7 @@ namespace SpecFlow_For_WoolWorths.Pages
         /// <returns></returns>
         public async Task<LowPricePage> GotoLowPricePage()
         {
-            await clickMenuItem("Low Price");
+            await ClickMenuItem("Low Price");
             return new LowPricePage(_page);
         }
 

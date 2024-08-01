@@ -28,7 +28,7 @@ namespace PlaywrightTest.pages
         /// <summary>
         /// The method is used to initialize the location variables from the user configuration file
         /// </summary>
-        protected override void initLocationDefinition()
+        protected override void InitLocationDefinition()
         {
             loginEmailInput = userSettings.GetAppParameter("loginpage.email_input_location");
             loginEmailContinueButton = userSettings.GetAppParameter("loginpage.email_continue_button_text");

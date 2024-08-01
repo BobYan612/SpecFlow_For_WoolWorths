@@ -55,13 +55,13 @@ namespace PlaywrightTest.pages
                    }
                 ));
             logger = factory.CreateLogger(this.GetType().Name);
-            initLocationDefinition();
+            InitLocationDefinition();
         }
 
         /// <summary>
         /// The abstranct initialized method which should be implemented by child object.
         /// </summary>
-        protected abstract void initLocationDefinition();
+        protected abstract void InitLocationDefinition();
 
         /// <summary>
         /// The method is used to search one element on the page. It append "visible=true" to forcely find 
@@ -142,7 +142,7 @@ namespace PlaywrightTest.pages
         /// </summary>
         /// <param name="pathLocation">The multiple menu path, separated by "/"</param>
         /// <returns>Task object</returns>
-        public async Task clickMenuItem(string pathLocation)
+        public async Task ClickMenuItem(string pathLocation)
         {
             String[] pathList = pathLocation.Split('/');
             logger.LogDebug($"Selecting menu:{pathLocation}");
