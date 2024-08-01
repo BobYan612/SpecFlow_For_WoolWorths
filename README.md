@@ -2,6 +2,14 @@
 
 **The Project is one example to use (Specflow + Playwright) to create a BDD test framework**
 
+**Features**  
+There are the below considerations during implementation:
+ - Decouple the location definition from code to one configuration file ([elementlocations.json](SpecFlow_For_WoolWorths/elementlocations.json))
+ - Specify the test options in one configuration file ([usersettings.json](SpecFlow_For_WoolWorths/usersettings.json)) which may easly change the Chromium/Firefox/Webkit and credential parameters.
+ - Implement one singleton class([UserConfiguration](SpecFlow_For_WoolWorths/Support/UserConfiguration.cs)) to read the user configuration file
+ - Design homepage as one factory pattern which may create other page objects, so that the outside invokers may easily obtain the other page object.
+ - Use ILogger to control the output of the test log
+
 **Dependency**  
 SpecFlow  
 SpecFlow.Plus.LivingDocPlugin  
@@ -14,13 +22,6 @@ Microsoft.Extensions.Configuration
 >[!NOTE]  
 >The executable binary such as chrome.exe will be installed automatically when installing Playwright, or we need to download the related version from playwright official webserver. 
 
-**Features**  
-There are the below considerations during implementation:
- - Decouple the location definition from code to one configuration file ([elementlocations.json](SpecFlow_For_WoolWorths/elementlocations.json))
- - Specify the test options in one configuration file ([usersettings.json](SpecFlow_For_WoolWorths/usersettings.json)) which may easly change the Chromium/Firefox/Webkit and credential parameters.
- - Implement one singleton class([UserConfiguration](SpecFlow_For_WoolWorths/Support/UserConfiguration.cs)) to read the user configuration file
- - Design homepage as one factory pattern which may create other page objects, so that the outside invokers may easily obtain the other page object.
- - Use ILogger to control the output of the test log
 
 **Test**  
 The project has implememnted and verified 5 test scenarios beased on the Trolley feature (see [trolley.feature](SpecFlow_For_WoolWorths/Features/trolley.feature) in Features folder)
