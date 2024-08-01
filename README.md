@@ -10,12 +10,13 @@ The project has implememnted and verified 4 test scenarios beased on the Trolley
 
 @regression
 Scenario: Remove one item in the trolley
-	Given the user has login in 
-	And Trolley item list is empty
-	And add "Hellers Sausages Cheese & Bacon Precooked" to trolley under "" in "Specials & offers Page"
-	And add "fresh fruit bananas yellow" to trolley under "Browse/Fruit & Veg/Fruit/Shop all Fruit" in "Browse Page"
-	When click "remove" for "fresh fruit bananas yellow" in Trolley Page
-	Then The total price and subtotal price have been shown correctly
+   Given the user has login in
+   And Trolley item list is empty
+   And add "Hellers Sausages Cheese & Bacon Precooked" to trolley under "" in "Specials & offers Page"
+   And add "fresh fruit bananas yellow" to trolley under "Browse/Fruit & Veg/Fruit/Shop all Fruit" in "Browse Page"
+   When click "remove" for "fresh fruit bananas yellow" in Trolley Page
+   Then The total price and subtotal price have been shown correctly
+
 
 
 
