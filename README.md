@@ -21,11 +21,12 @@ There are the below considerations during implementation:
 
 **Test**
 The project has implememnted and verified 5 test scenarios beased on the Trolley feature (see trolley.feature in Features folder)
->Scenario1: Choose a product from browse to trolley
->Scenario2: Choose a product from speical & offers to trolley
->Scenario3: Choose a product from low price to trolley
->Scenario4: Update the quantity in trolley
->Scenario5: Remove one item in the trolley
+ - Scenario1: Choose a product from browse to trolley
+ - Scenario2: Choose a product from speical & offers to trolley parameters.
+ - Scenario3: Choose a product from low price to trolley
+ - Scenario4: Update the quantity in trolley
+ - Scenario5: Remove one item in the trolley
+
 
 
 
