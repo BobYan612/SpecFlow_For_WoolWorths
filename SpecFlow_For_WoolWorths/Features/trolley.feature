@@ -33,7 +33,7 @@ Scenario: Update the quantity in trolley
 	And add "Hellers Sausages Cheese & Bacon Precooked" to trolley under "" in "Specials & offers Page"
 	And add "fresh fruit bananas yellow" to trolley under "Browse/Fruit & Veg/Fruit/Shop all Fruit" in "Browse Page"
 	When click "plus" for "fresh fruit bananas yellow" in Trolley Page
-	When set "{5}" to quantity for "Hellers Sausages Cheese & Bacon Precooked" in Trolley Page
+	When set "5" to quantity for "Hellers Sausages Cheese & Bacon Precooked" in Trolley Page
 	When click "minus" for "fresh fruit bananas yellow" in Trolley Page
 	Then The total price and subtotal price have been shown correctly
 

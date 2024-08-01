@@ -106,7 +106,7 @@ namespace PlaywrightTest.pages
         public async Task RemoveChosenItem(string productName)
         {
             ILocator cdxCardElement = await LocateElementByChildText(productName, trolleyProductSectionTag);
-            ILocator productFooterButton = cdxCardElement.Locator(trolleyProductRemoveButton); ;
+            ILocator productFooterButton = await LocateElementFromParent(cdxCardElement, trolleyProductRemoveButton, SearchType.Text);
             await productFooterButton.ClickAsync();
         }
 
@@ -308,7 +308,7 @@ namespace PlaywrightTest.pages
             //Click the input firstly, then it may becomes editable status.
             await quantityLocator.ClickAsync();
             await quantityLocator.FillAsync(quantityNumber);
-            ILocator confirmButton = await LocateElementFromParent(cdxCardElement, trolleyProductClearConfirmButton, SearchType.Text);
+            ILocator confirmButton = await LocateElementFromParent(cdxCardElement, trolleyProductQuantityConfirmButton, SearchType.Text);
             await confirmButton.ClickAsync();
         }
     }

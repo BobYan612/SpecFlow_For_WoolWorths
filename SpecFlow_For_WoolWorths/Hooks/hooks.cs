@@ -78,5 +78,18 @@ namespace SpecFlow_For_WoolWorths.Hooks
             User = await context1.NewPageAsync();
         }
 
+        /// <summary>
+        /// clean some resource after scenario
+        /// </summary>
+        /// <returns></returns>
+        [AfterScenario]
+        public async Task DestroyResource()
+        {
+            if (User != null)
+            {
+                await User.CloseAsync();
+            }
+        }
+
     }
 }
