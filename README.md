@@ -1,3 +1,4 @@
+# Deprecated as my new codes have been moved to https://github.com/BobYan612.
 ## BDD Test for Woolworths
 
 **The Project is one example to use (Specflow + Playwright) to create a BDD test framework**
